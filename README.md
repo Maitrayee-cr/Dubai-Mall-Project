@@ -162,19 +162,6 @@ Open:
 ```text
 http://localhost:5173
 ```
-
-## Deployment
-
-This is a static site. It can be deployed on:
-
-- Vercel
-- Netlify
-- GitHub Pages
-
-No build step is required.
-
-See [DEPLOYMENT.md](DEPLOYMENT.md) for step-by-step deployment instructions.
-
 ## Sources
 
 Official and tourism sources used for facts and positioning:
@@ -199,25 +186,3 @@ Official and tourism sources used for facts and positioning:
 - Deployable static build: included
 - README and optional write-up: included
 
-## If I Had More Time
-
-- Add compressed WebM and mobile-specific video variants
-- Replace public/supporting imagery with approved Dubai Mall media
-- Add real floor-plan overlays and venue capacity data
-- Add analytics for deck engagement and CTA clicks
-- Build deeper event-booking and sponsorship-package modules
-- Run Lighthouse after public deployment and tune for a verified 90+ score
-
-## Submission Assets
-
-Recommended submission package:
-
-- Live deployed URL
-- GitHub repository URL
-- `SUBMISSION_WRITEUP.md`
-
-Suggested repository name:
-
-```text
-dubai-mall-interactive-sales-deck
-```
