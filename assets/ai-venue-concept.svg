@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">AI venue concept</title>
+  <desc id="desc">A generated concept rendering of a launch event venue inside a retail destination.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#14151b"/>
+      <stop offset="0.58" stop-color="#243b55"/>
+      <stop offset="1" stop-color="#b7192b"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" x2="1">
+      <stop offset="0" stop-color="#f7f4ef"/>
+      <stop offset="0.5" stop-color="#d9d3c7"/>
+      <stop offset="1" stop-color="#f7f4ef"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="760" fill="url(#sky)"/>
+  <path d="M0 546 C220 482 414 468 620 516 C814 560 990 552 1200 496 L1200 760 L0 760 Z" fill="url(#floor)"/>
+  <g opacity=".24" fill="none" stroke="#fff" stroke-width="3">
+    <path d="M152 110 C320 34 516 34 660 112 C822 198 972 190 1088 106"/>
+    <path d="M128 168 C318 96 498 102 666 178 C838 256 974 246 1090 170"/>
+    <path d="M102 228 C310 162 510 170 690 242 C846 304 984 302 1114 226"/>
+  </g>
+  <g transform="translate(182 260)">
+    <rect x="0" y="88" width="836" height="206" rx="8" fill="#101216" opacity=".78"/>
+    <rect x="64" y="0" width="708" height="112" rx="8" fill="#b7192b"/>
+    <text x="418" y="72" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="48" font-weight="700">LAUNCH MOMENT</text>
+    <g fill="#ffbf55">
+      <circle cx="88" cy="150" r="12"/>
+      <circle cx="148" cy="168" r="9"/>
+      <circle cx="208" cy="148" r="12"/>
+      <circle cx="628" cy="160" r="10"/>
+      <circle cx="694" cy="148" r="13"/>
+      <circle cx="754" cy="174" r="9"/>
+    </g>
+    <g fill="#fff" opacity=".88">
+      <rect x="296" y="154" width="246" height="12"/>
+      <rect x="256" y="184" width="324" height="10"/>
+      <rect x="338" y="214" width="160" height="10"/>
+    </g>
+  </g>
+</svg>
