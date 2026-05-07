@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="An interactive sales deck for Dubai Mall, built for leasing, sponsorship, and event conversations."
+    />
+    <title>Dubai Mall | Interactive Sales Deck</title>
+    <link rel="preconnect" href="https://thedubaimall.com" />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="intro-curtain" aria-hidden="true">
+      <span>Dubai Mall</span>
+      <strong>Commercial Destination Deck</strong>
+    </div>
+    <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+    <header class="topbar" aria-label="Primary">
+      <a class="brand" href="#opening" aria-label="Dubai Mall deck home">
+        <span class="brand-mark">DXB</span>
+        <span>Partner Deck</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#reel">Reel</a>
+        <a href="#audiences">Audience</a>
+        <a href="#proof">Proof</a>
+        <a href="#retail">Retail</a>
+        <a href="#platform">Platform</a>
+        <a href="#brandlab">Brand Lab</a>
+        <a href="#itinerary">Itinerary</a>
+        <a href="#concepts">AI Concepts</a>
+        <a href="#modules">Modules</a>
+        <a href="#dealroom">Deal Room</a>
+      </nav>
+      <button class="icon-button menu-button" id="menuButton" aria-label="Toggle navigation">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <aside class="section-rail" aria-label="Section shortcuts">
+      <a href="#opening" aria-label="Opening"></a>
+      <a href="#reel" aria-label="Reel"></a>
+      <a href="#audiences" aria-label="Audience"></a>
+      <a href="#proof" aria-label="Proof"></a>
+      <a href="#retail" aria-label="Retail"></a>
+      <a href="#platform" aria-label="Platform"></a>
+      <a href="#brandlab" aria-label="Brand Lab"></a>
+      <a href="#dealroom" aria-label="Deal Room"></a>
+    </aside>
+
+    <main>
+      <section class="hero panel" id="opening" data-theme="dark">
+        <div class="hero-media" aria-hidden="true">
+          <video
+            class="hero-video"
+            src="assets/dubai-mall-reel.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            poster="assets/ai-venue-concept.svg"
+          ></video>
+          <div class="cinematic-lines">
+            <span>Not a shopping center.</span>
+            <span>A global destination.</span>
+            <span>The world's most powerful retail platform.</span>
+          </div>
+        </div>
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Downtown Dubai / global retail + entertainment icon</p>
+          <h1>Not a shopping center. A global destination engine.</h1>
+          <p>
+            Dubai Mall is where luxury, tourism, entertainment, dining, and spectacle converge
+            under the shadow of Burj Khalifa. For brands, it is not placement. It is participation.
+          </p>
+          <div class="hero-actions">
+            <button class="primary-button" data-open-reel>Watch Reel</button>
+            <a class="secondary-button" href="#proof">View Opportunity</a>
+          </div>
+        </div>
+        <div class="chapter-preview reveal" aria-label="Deck chapters">
+          <a href="#audiences"><span>01</span>Match the buyer</a>
+          <a href="#platform"><span>02</span>Package the platform</a>
+          <a href="#dealroom"><span>03</span>Move to action</a>
+        </div>
+        <aside class="signal-strip reveal" aria-label="Key business signals">
+          <div><strong data-count="100" data-suffix="M+">0</strong><span>annual visitors</span></div>
+          <div><strong data-count="1200" data-suffix="+">0</strong><span>retail outlets</span></div>
+          <div><strong data-count="150" data-suffix="+">0</strong><span>luxury experiences</span></div>
+        </aside>
+      </section>
+
+      <section class="reel-panel panel" id="reel" data-theme="dark">
+        <div class="section-lead reveal">
+          <p class="eyebrow">Video-first story</p>
+          <h2>Start every pitch with motion, then let the buyer choose the path.</h2>
+          <p>
+            The deck is designed around a screen-share flow: lead with a destination reel, then
+            branch into luxury leasing, sponsorship, or event modules based on who is in the room.
+          </p>
+        </div>
+        <div class="reel-stage reveal">
+          <div class="inline-video" id="inlineVideo">
+            <video
+              id="inlineReelVideo"
+              src="assets/dubai-mall-reel.mp4"
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              poster="assets/ai-venue-concept.svg"
+            ></video>
+            <button class="inline-play" id="inlinePlay" aria-label="Play Dubai Mall reel">
+              <span>Play Reel</span>
+            </button>
+          </div>
+          <div class="storyboard">
+            <article>
+              <span>00:00</span>
+              <strong>Scale</strong>
+              <p>Open with crowds, multi-level retail, and the emotional size of the destination.</p>
+            </article>
+            <article>
+              <span>00:12</span>
+              <strong>Gravity</strong>
+              <p>Move into entertainment anchors, food, attractions, and full-day dwell time.</p>
+            </article>
+            <article>
+              <span>00:24</span>
+              <strong>Action</strong>
+              <p>Close with the commercial path: lease, sponsor, activate, or book.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="audiences panel" id="audiences">
+        <div class="section-lead reveal">
+          <p class="eyebrow">Choose the room</p>
+          <h2>One property, three commercial conversations.</h2>
+        </div>
+        <div class="audience-shell reveal">
+          <div class="audience-switch" role="tablist" aria-label="Audience pitch">
+            <button class="audience-card active" role="tab" aria-selected="true" data-audience="tenant">
+              <span>Tenant</span>
+              <strong>Launch a store people plan trips around.</strong>
+            </button>
+            <button class="audience-card" role="tab" aria-selected="false" data-audience="sponsor">
+              <span>Sponsor</span>
+              <strong>Turn foot traffic into a branded media channel.</strong>
+            </button>
+            <button class="audience-card" role="tab" aria-selected="false" data-audience="producer">
+              <span>Producer</span>
+              <strong>Book a venue with built-in audience gravity.</strong>
+            </button>
+          </div>
+          <article class="audience-stage" id="audienceStage" tabindex="0">
+            <p class="eyebrow">Retail tenant path</p>
+            <h3>Use Dubai Mall as a flagship, launch stage, and tourism magnet.</h3>
+            <p>
+              A tenant pitch should lead with audience scale, adjacency, dwell time, category
+              fit, and a launch plan that makes opening day feel like an event.
+            </p>
+            <dl>
+              <div><dt>Best for</dt><dd>Flagship, luxury, pop-up, F&amp;B</dd></div>
+              <div><dt>Proof needed</dt><dd>Traffic, audience mix, adjacencies</dd></div>
+              <div><dt>Next action</dt><dd>Schedule leasing walkthrough</dd></div>
+            </dl>
+          </article>
+        </div>
+      </section>
+
+      <section class="proof panel" id="proof">
+        <div class="section-lead reveal">
+          <p class="eyebrow">Why this property</p>
+          <h2>A destination with the gravity of a city and the precision of a luxury platform.</h2>
+        </div>
+        <div class="proof-grid reveal">
+          <article class="metric">
+            <span>01</span>
+            <strong>100M+</strong>
+            <p>Annual footfall at the world's most visited retail and lifestyle destination.</p>
+          </article>
+          <article class="metric">
+            <span>02</span>
+            <strong>1,200+</strong>
+            <p>Retail outlets spanning luxury flagships, global brands, and destination concepts.</p>
+          </article>
+          <article class="metric">
+            <span>03</span>
+            <strong>200+</strong>
+            <p>International dining experiences turn retail trips into full-day itineraries.</p>
+          </article>
+          <article class="metric">
+            <span>04</span>
+            <strong>18.72M</strong>
+            <p>Dubai welcomed record international overnight visitors in 2024.</p>
+          </article>
+        </div>
+        <div class="reach-map reveal" aria-label="Global visitor reach visualization">
+          <div class="map-orbit">
+            <span class="pin pin-dubai">Dubai</span>
+            <span class="pin pin-europe">Europe</span>
+            <span class="pin pin-asia">Asia</span>
+            <span class="pin pin-gcc">GCC</span>
+            <span class="pin pin-us">Americas</span>
+          </div>
+          <div class="reach-copy">
+            <p class="eyebrow">Audience gravity</p>
+            <h3>Tourists arrive with intent. Brands meet them at peak attention.</h3>
+            <div class="reach-bars">
+              <div><span>Luxury tourism</span><strong style="--bar: 92%"></strong></div>
+              <div><span>Family entertainment</span><strong style="--bar: 84%"></strong></div>
+              <div><span>Dining-led dwell time</span><strong style="--bar: 76%"></strong></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="story panel" id="retail">
+        <div class="split reveal">
+          <div class="copy-block">
+            <p class="eyebrow">Retail + luxury</p>
+            <h2>Flagship energy without waiting for a high street.</h2>
+            <p>
+              For retail tenants, Dubai Mall offers more than frontage. The pitch is global reach,
+              luxury context, tourist intent, and a launch environment where new concepts can meet
+              residents, visitors, VIPs, and cultural moments in the same day.
+            </p>
+            <div class="pills" aria-label="Retail segments">
+              <span>Luxury</span>
+              <span>Flagship</span>
+              <span>F&amp;B</span>
+              <span>Pop-up</span>
+            </div>
+          </div>
+          <div class="visual-tile retail-tile" role="img" aria-label="Premium retail concourse concept">
+            <div class="tile-caption">
+              <span>Leasing path</span>
+              <strong>From brand awareness to signed space</strong>
+            </div>
+          </div>
+        </div>
+        <div class="luxury-runway reveal" aria-label="Luxury retail presentation">
+          <article>
+            <span>Fashion Avenue</span>
+            <strong>Luxury as theater</strong>
+          </article>
+          <article>
+            <span>Flagship launches</span>
+            <strong>Retail as global media</strong>
+          </article>
+          <article>
+            <span>Tourist intent</span>
+            <strong>Attention with purchase energy</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="platform panel" id="platform" data-theme="dark">
+        <div class="section-lead reveal">
+          <p class="eyebrow">Events + sponsorship</p>
+          <h2>Turn the property into a campaign channel.</h2>
+        </div>
+        <div class="platform-layout reveal">
+          <button class="platform-item active" data-platform="events">
+            <span>Events</span>
+            <strong>Concerts, launches, celebrity appearances, fashion moments</strong>
+          </button>
+          <button class="platform-item" data-platform="sponsorship">
+            <span>Sponsorship</span>
+            <strong>Always-on visibility across family, tourist, and retail audiences</strong>
+          </button>
+          <button class="platform-item" data-platform="entertainment">
+            <span>Entertainment</span>
+            <strong>Aquarium, ice rink, fountain access, dining, cinema, and experiential anchors</strong>
+          </button>
+          <div class="platform-display" id="platformDisplay">
+            <p class="display-kicker">Event platform</p>
+            <h3>Global footfall becomes a programmable launch platform.</h3>
+            <p>
+              Dubai Mall can package Fashion Avenue, aquarium frontage, fountain-adjacent moments,
+              retail routes, and social-first activations into one measurable campaign.
+            </p>
+          </div>
+        </div>
+        <div class="event-energy reveal" aria-label="Event energy visualization">
+          <span></span><span></span><span></span><span></span><span></span>
+          <p>Launches / concerts / fashion moments / creator events / cultural spectacle</p>
+        </div>
+      </section>
+
+      <section class="brandlab panel" id="brandlab" data-theme="dark">
+        <div class="section-lead reveal">
+          <p class="eyebrow">Unexpected feature</p>
+          <h2>See your brand inside the destination.</h2>
+          <p>
+            A sponsor-facing visualization that lets a prospect imagine their takeover before a
+            production team builds final renders.
+          </p>
+        </div>
+        <div class="brandlab-grid reveal">
+          <div class="brandlab-stage">
+            <div class="brand-marquee" id="brandMarquee">YOUR BRAND</div>
+            <div class="brand-zone zone-1"></div>
+            <div class="brand-zone zone-2"></div>
+            <div class="brand-zone zone-3"></div>
+          </div>
+          <div class="brandlab-controls">
+            <label>
+              Brand name
+              <input id="brandNameInput" type="text" value="AURORA" maxlength="18" />
+            </label>
+            <label>
+              Activation mood
+              <select id="brandMoodInput">
+                <option value="luxury">Luxury launch</option>
+                <option value="family">Family spectacle</option>
+                <option value="night">Night event</option>
+              </select>
+            </label>
+            <p>
+              This is the kind of small, memorable product feature that turns the deck from a
+              presentation into a sales tool.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="itinerary panel" id="itinerary">
+        <div class="section-lead reveal">
+          <p class="eyebrow">Activation itinerary</p>
+          <h2>Build a one-day partner journey in seconds.</h2>
+        </div>
+        <div class="itinerary-builder reveal">
+          <div class="zone-picker" aria-label="Activation zones">
+            <button class="zone-button active" data-zone="launch">Launch Day</button>
+            <button class="zone-button" data-zone="family">Family Weekend</button>
+            <button class="zone-button" data-zone="luxury">Luxury Preview</button>
+            <button class="zone-button" data-zone="expo">Expo Takeover</button>
+          </div>
+          <div class="timeline" id="timeline">
+            <article>
+              <span>10:00</span>
+              <strong>Fashion Avenue arrival moment</strong>
+              <p>VIP welcome, creator check-in, and first social capture.</p>
+            </article>
+            <article>
+              <span>13:00</span>
+              <strong>Center court product reveal</strong>
+              <p>Live demo, sampling, and guided guest flow into the luxury retail zone.</p>
+            </article>
+            <article>
+              <span>18:00</span>
+              <strong>Evening performance hook</strong>
+              <p>Music, talent appearance, or influencer finale designed for replay.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="concepts panel" id="concepts">
+        <div class="section-lead reveal">
+          <p class="eyebrow">AI-generated concept assets</p>
+          <h2>Use generated visuals where real media does not yet exist.</h2>
+          <p>
+            These concept boards show how the same deck can sell venue modules,
+            sponsor takeovers, and future leasing moments before final production assets are ready.
+          </p>
+        </div>
+        <div class="concept-grid reveal">
+          <article class="concept-card">
+            <img src="assets/ai-venue-concept.svg" alt="AI concept rendering of a Dubai Mall event venue module" />
+            <div>
+              <span>Venue module</span>
+              <strong>Center Court as a launch theater</strong>
+              <p>Used for producer and event-booking conversations.</p>
+            </div>
+          </article>
+          <article class="concept-card">
+            <img src="assets/ai-sponsor-route.svg" alt="AI concept map for a Dubai Mall sponsorship route" />
+            <div>
+              <span>Sponsor module</span>
+              <strong>Brand journey across high-traffic zones</strong>
+              <p>Used to explain packages before final floor-plan approvals.</p>
+            </div>
+          </article>
+          <article class="concept-card">
+            <img src="assets/ai-leasing-path.svg" alt="AI concept board for a Dubai Mall leasing path" />
+            <div>
+              <span>Leasing module</span>
+              <strong>From prospect story to signed space</strong>
+              <p>Used to tailor the pitch by category and deal stage.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="journey panel" id="modules">
+        <div class="section-lead reveal">
+          <p class="eyebrow">Expandable architecture</p>
+          <h2>Three deeper paths for the commercial team.</h2>
+        </div>
+        <div class="module-tabs reveal" role="tablist" aria-label="Commercial modules">
+          <button class="tab active" role="tab" aria-selected="true" data-module="leasing">Leasing</button>
+          <button class="tab" role="tab" aria-selected="false" data-module="sponsors">Sponsors</button>
+          <button class="tab" role="tab" aria-selected="false" data-module="events">Events</button>
+        </div>
+        <div class="module-panel reveal" id="modulePanel" tabindex="0">
+          <div>
+            <p class="eyebrow">Leasing module</p>
+            <h3>Segment the pitch by category.</h3>
+            <p>
+              Luxury, mass retail, food, entertainment, and pop-up prospects each get a tailored
+              case: audience, adjacency, sample formats, launch timeline, and next action.
+            </p>
+          </div>
+          <ul>
+            <li>Category-specific positioning</li>
+            <li>Tenant adjacency snapshots</li>
+            <li>Inquiry CTA for leasing team</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="dealroom panel" id="dealroom">
+        <div class="section-lead reveal">
+          <p class="eyebrow">Deal room</p>
+          <h2>Translate attention into a business case.</h2>
+        </div>
+        <div class="deal-grid reveal">
+          <form class="calculator" id="calculator">
+            <label>
+              Expected campaign days
+              <input id="daysInput" type="range" min="1" max="30" value="10" />
+              <output id="daysOutput">10 days</output>
+            </label>
+            <label>
+              Estimated daily engaged visitors
+              <input id="visitorsInput" type="range" min="1000" max="50000" step="1000" value="12000" />
+              <output id="visitorsOutput">12,000 visitors</output>
+            </label>
+            <label>
+              Target conversion rate
+              <input id="rateInput" type="range" min="1" max="12" value="4" />
+              <output id="rateOutput">4%</output>
+            </label>
+          </form>
+          <aside class="calculator-result" aria-live="polite">
+            <span>Projected qualified actions</span>
+            <strong id="actionsOutput">4,800</strong>
+            <p>
+              Use this as a directional planning tool for leasing pop-ups, sponsorship activations,
+              event signups, or product trials.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="closing panel" id="action" data-theme="dark">
+        <div class="final-glow" aria-hidden="true"></div>
+        <p class="eyebrow">Next action</p>
+        <h2>Bring the right brand into the right moment.</h2>
+        <p>
+          This deck is built to move a prospect from curiosity to conversation: lease space,
+          sponsor an audience, or book the property as a venue.
+        </p>
+        <div class="cta-row">
+          <a class="primary-button" href="https://thedubaimall.com/en" target="_blank" rel="noreferrer">Start Leasing</a>
+          <a class="secondary-button" href="https://thedubaimall.com/en/about-us/about-the-dubai-mall" target="_blank" rel="noreferrer">Source Facts</a>
+        </div>
+      </section>
+    </main>
+
+    <div class="deck-controls" aria-label="Deck controls">
+      <button class="icon-button" id="prevSection" aria-label="Previous section">Up</button>
+      <button class="icon-button" id="nextSection" aria-label="Next section">Dn</button>
+    </div>
+
+    <dialog class="reel" id="reelDialog">
+      <button class="icon-button close-button" id="closeReel" aria-label="Close video">X</button>
+      <div class="reel-frame">
+        <video
+          id="modalReelVideo"
+          src="assets/dubai-mall-reel.mp4"
+          controls
+          muted
+          playsinline
+          preload="metadata"
+          poster="assets/ai-venue-concept.svg"
+        ></video>
+      </div>
+      <div class="reel-fallback">
+        <span>If autoplay is blocked, use the player controls or open the reel file directly.</span>
+        <a href="assets/dubai-mall-reel.mp4" target="_blank" rel="noreferrer">
+          Open Video
+        </a>
+      </div>
+    </dialog>
+
+    <script src="data/deck-data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
